@@ -1,0 +1,35 @@
+#contact-page {
+    min-height: 700px;
+
+    .inner {
+        background-color: lightgray;
+        height: 400px;
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+
+                .col-lg-4 {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+
+    #contact-page {
+        .inner {
+            background-color: white;
+            height: auto;
+        }
+    }
+}

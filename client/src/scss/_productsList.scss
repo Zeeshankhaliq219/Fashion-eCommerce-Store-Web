@@ -1,0 +1,39 @@
+$success: rgb(68, 105, 217);
+
+#products-list {
+    padding-top: 110px;
+
+}
+
+#product-list-cards {
+    .col {
+        .card {
+
+            // min-height: 500px;
+            .overflow-hidden {
+                height: 250px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .card-body {
+                .stock-discount {
+                    font-weight: lighter;
+                    font-size: small;
+                }
+            }
+
+            &:hover {
+                border: 1px solid $success !important;
+            }
+
+            &:hover img {
+                transition: 1s;
+                transform: scale(1.1);
+            }
+
+        }
+    }
+}

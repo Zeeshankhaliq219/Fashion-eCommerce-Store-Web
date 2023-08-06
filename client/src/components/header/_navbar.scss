@@ -1,0 +1,104 @@
+$success: rgb(68, 105, 217);
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.navbar-absolute {
+    z-index: 1000;
+    left: 9%;
+    right: 9%;
+    width: 81% !important;
+    margin-bottom: 80px;
+
+}
+
+.navbar-expand-lg {
+    .navbar-brand {
+        .d-md-inline {
+            font-size: larger;
+            font-family: 'Kaushan Script', cursive;
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                a {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+                a.active {
+                    color: $success !important;
+                    font-weight: bold !important;
+                }
+            }
+        }
+    }
+}
+
+.navbar-animation {
+    z-index: 1000;
+    left: 10%;
+    width: 81%;
+    border-radius: 0 !important;
+    animation: navbar-animation 0.8s forwards;
+
+    .navbar-expand-lg {
+        padding-left: 140px !important;
+        padding-right: 140px !important;
+        border-radius: 0% 0% 5px 5px !important;
+
+        transition: 0.9s;
+        backdrop-filter: blur(15px) !important;
+        background: rgba($color: white, $alpha: 0.9) !important;
+    }
+}
+
+.toggleIcon:focus{
+  box-shadow: none !important;
+}
+
+@keyframes navbar-animation {
+    from {
+        width: 80%;
+    }
+
+    to {
+        left: 0%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:1062px) {
+    .navbar-animation {
+        .navbar-expand-lg {
+            padding-left: 100px !important;
+            padding-right: 100px !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-absolute {
+        width: 90% !important;
+        left: 5%;
+        right: 5%;
+    }
+
+    .navbar-animation {
+        .navbar-expand-lg {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+
+    .login-botton {
+        text-align: center;
+
+        .btn-success {
+
+            width: 95%;
+        }
+    }
+
+}

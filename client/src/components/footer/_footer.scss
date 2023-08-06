@@ -1,0 +1,19 @@
+
+.footer {
+    .container {
+        .row {
+            .col {
+                .ms-3 {
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}
+
+.input-group {
+    .btn-success:hover {
+        transition: 0.4s;
+        transform: translate(5px);
+    }
+}

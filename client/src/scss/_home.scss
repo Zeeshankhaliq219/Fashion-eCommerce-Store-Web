@@ -1,0 +1,330 @@
+$success: rgb(68, 105, 217);
+
+// carousel stylling
+#carousel-background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/hexagonal-technology-pattern-mesh-background-with-text-space_1017-26293.jpg?w=996&t=st=1691329352~exp=1691329952~hmac=a443580467691137170f1c6af3513c84859796103f8f1ce44697fd6101a93b2f');
+
+    .container {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .row {
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        padding-top: 85px;
+
+                        .col-lg-4,
+                        .col-lg-5 {
+                            div {
+                                h1 {
+                                    font-size: 60px;
+                                }
+                            }
+                        }
+
+                        .col-lg-8 {
+
+                            .carousel-img-active {
+                                transform: rotate(-14deg);
+                                filter: drop-shadow(0px 26px 20px $success);
+                            }
+
+                            &:hover .carousel-img-active {
+                                transition: 0.5s !important;
+                                transform: rotate(-12deg) !important;
+
+                            }
+
+                        }
+
+                        .col-lg-7 {
+                            .carousel-img {
+                                width: 80%;
+                                transform: rotate(4deg);
+                                filter: drop-shadow(0px 26px 20px $success);
+                            }
+
+                            &:hover .carousel-img {
+                                transition: 0.5s;
+                                transform: scaleY(1.3);
+                                transform: scaleX(1.1);
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// collections section
+#collections-section {
+    margin-top: 140px;
+
+    .col {
+        .card {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+
+            .layer {
+                position: absolute;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(360deg, rgb(68, 105, 217) 0%, transparent, transparent 60%);
+            }
+
+            .card-img {
+                height: 500px;
+            }
+        }
+
+        .card:hover {
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            .card-img {
+                transition: 0.8s;
+                transform: scale(1.2);
+            }
+
+        }
+    }
+}
+
+
+// exclusiveDeal-section
+#exclusiveDeal-section {
+    margin: 140px 0;
+
+    .col:nth-child(1) {
+        background-image: url('https://wallpapercave.com/wp/wp9918431.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+
+        .extra-layer {
+            height: 95%;
+            width: 96%;
+            background-color: rgba(0, 0, 0, 0.6);
+
+            .text-center {
+                .time {
+                    font-size: 60px !important;
+                }
+            }
+        }
+    }
+
+    .col {
+        height: 550px;
+    }
+
+}
+
+// contributors-section
+#contributors-section {
+    margin: 100px 0 50px 0;
+
+    .col {
+        .text-center {
+            img {
+                filter: grayscale(100%);
+            }
+
+            img:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+
+// popularProducts-section
+#popularProducts-section {
+
+    .row:nth-child(2) {
+        .col {
+            .card {
+                position: relative;
+                height: 550px;
+                // overflow: hidden;
+
+                .card-image {
+                    height: 400px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    .card-img-top {
+                        height: 400px;
+
+                        &:hover {
+                            transition: 1s;
+                            transform: scale(1.1) !important;
+                        }
+                    }
+                }
+
+
+                .card-body {
+                    height: 150px;
+                    overflow: hidden;
+                    padding-top: 35px;
+
+                    .add-to-cart {
+                        position: absolute;
+                        color: white;
+                        padding: 10px 0;
+                        top: 69%;
+                        left: 2.5%;
+                        width: 95%;
+                        display: none;
+
+                    }
+
+                    .favourite {
+                        position: absolute;
+                        color: $success;
+                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                        border-radius: 50%;
+                        padding: 10px;
+                        top: 2%;
+                        left: 3%;
+                        display: none;
+                    }
+
+                }
+
+                &:hover .add-to-cart,
+                &:hover .favourite {
+                    display: block !important;
+                }
+
+                &:hover {
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    border: 1px solid $success !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:992px) {
+
+    #carousel-background-image {
+        .container {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            .col-lg-7 {
+                                .carousel-img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // sevices section stylling
+    #services-section {
+        .col {
+            .card {
+                .row {
+                    .col:nth-child(2) {
+                        border: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #collections-section {
+        margin-top: 90px;
+
+        .col {
+            .card {
+                height: 400px;
+            }
+        }
+    }
+
+    // sevices section stylling
+    #services-section {
+        .col {
+            .card {
+                .row {
+
+                    .col:nth-child(1),
+                    .col:nth-child(2),
+                    .col:nth-child(3) {
+                        border: none !important;
+                        border-bottom: 1px solid $success !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // exclusiveDeal-section
+    #exclusiveDeal-section {
+        margin: 80px 0;
+
+        .col:nth-child(1) {
+            .extra-layer {
+                .text-center {
+                    width: 90% !important;
+
+                    .time {
+                        font-size: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // popularProducts-section
+    #popularProducts-section {
+        .row:nth-child(1) {
+            .col {
+                p {
+                    width: 90% !important;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            .col {
+                .card {
+                    .card-body {
+                        .add-to-cart {
+                            display: block;
+
+                        }
+
+                        .favourite {
+                            display: block;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

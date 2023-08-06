@@ -1,0 +1,26 @@
+#product-details {
+    margin-top: 150px;
+}
+
+li.thumb {
+    height: 60px;
+}
+
+li.thumb.selected {
+    height: 70px;
+}
+
+.details-add-to-cart:hover {
+    color: white !important;
+
+}
+
+.price-quantity{
+    .btn-outline-secondary{
+        border: 1px solid rgb(203, 200, 200);
+    }
+    span{
+        border: 1px solid rgb(203, 200, 200);
+
+    }
+}

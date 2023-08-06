@@ -1,0 +1,38 @@
+#myOrder-page {
+    padding: 0 20px 50px 20px;
+
+    .row {
+        max-height: 100px;
+        overflow-y: auto;
+
+    }
+
+    .row::-webkit-scrollbar {
+        width: 7px;
+    }
+}
+
+#order-detail {
+    background: linear-gradient(120deg,  rgb(68, 105, 217));
+    min-height: 45vh;
+    display: flex;
+    align-items: end;
+    padding-bottom: 30px;
+}
+
+
+
+
+@media only screen and (max-width:576px) {
+    #myOrder-page {
+        .row {
+            max-height: 140px;
+            overflow-y: auto;
+        }
+
+        .row::-webkit-scrollbar {
+            width: 4px;
+        }
+    }
+
+}

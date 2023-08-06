@@ -1,0 +1,48 @@
+$success: rgb(68, 105, 217);
+$dark: #0f0f11ff;
+
+@import './scss/bootstrap';
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+    // background-color: #0f0f11ff;
+}
+
+.button-stylling {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(30deg, black 20%, transparent 50%, black 80%);
+    background-size: 100%;
+
+    &:hover {
+        transition: 1s !important;
+        background-size: 500px;
+
+    }
+}
+
+
+*{
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #37295e;
+  border-radius: 23px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 20px;
+  border: 2px solid white;
+}
